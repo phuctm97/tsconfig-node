@@ -1,4 +1,4 @@
-name: Check
+name: Github
 
 on:
   push:
@@ -17,8 +17,8 @@ jobs:
           cache: yarn
       - run: yarn install
       - run: echo "${{ github.event.head_commit.message }}" | yarn commitlint
-  yarn-contentlint:
-    name: yarn contentlint
+  yarn-lint:
+    name: yarn lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
