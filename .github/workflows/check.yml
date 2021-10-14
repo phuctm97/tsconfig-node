@@ -16,10 +16,9 @@ jobs:
         with:
           cache: yarn
       - run: yarn install
-      - name: yarn commitlint
-        run: echo "${{ github.event.head_commit.message }}" | yarn commitlint
-  yarn-lint:
-    name: yarn lint
+      - run: echo "${{ github.event.head_commit.message }}" | yarn commitlint
+  yarn-contentlint:
+    name: yarn contentlint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
