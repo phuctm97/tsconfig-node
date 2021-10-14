@@ -13,6 +13,6 @@ jobs:
         with:
           cache: yarn
       - run: yarn install
-      - run: echo "${{ github.event.head_commit.message }}" | yarn commitlint
-      - run: yarn cspell '**'
       - run: yarn prettier --check .
+      - run: yarn cspell '**'
+      - run: echo "${{ github.event.head_commit.message }}" | yarn commitlint
