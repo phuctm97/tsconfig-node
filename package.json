@@ -10,7 +10,8 @@
     "yarn": "^1.22.0"
   },
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "release": "standard-version"
   },
   "dependencies": {
     "@tsconfig/node14": "^1.0.1"
