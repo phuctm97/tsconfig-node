@@ -1,5 +1,4 @@
 {
-  "conventionalCommits.gitmoji": false,
   "typescript.tsdk": "node_modules/typescript/lib",
   "javascript.suggestionActions.enabled": false,
   "files.trimTrailingWhitespace": true,
@@ -7,6 +6,7 @@
   "files.insertFinalNewline": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
+  "conventionalCommits.gitmoji": false,
   "files.exclude": {
     "node_modules": true,
     "yarn.lock": true,
