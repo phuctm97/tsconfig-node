@@ -1,5 +1,3 @@
-name: Github Actions
-
 on:
   push:
     branches: [main]
@@ -8,7 +6,6 @@ on:
 
 jobs:
   lint:
-    name: Lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -16,9 +13,6 @@ jobs:
         with:
           cache: yarn
       - run: yarn install
-      - name: Run yarn commitlint
-        run: echo "${{ github.event.head_commit.message }}" | yarn commitlint
-      - name: Run yarn cspell
-        run: yarn cspell '**'
-      - name: Run yarn prettier --check
-        run: yarn prettier --check .
+      - run: echo "${{ github.event.head_commit.message }}" | yarn commitlint
+      - run: yarn cspell '**'
+      - run: yarn prettier --check .
