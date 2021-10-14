@@ -7,8 +7,18 @@ on:
     branches: [main]
 
 jobs:
-  yarn-lint:
-    name: yarn lint
+  lint-commit-msg:
+    name: Lint commit message
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          cache: yarn
+      - run: yarn install
+      - run: yarn commitlint --from=HEAD~1
+  lint-code:
+    name: Lint code
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
