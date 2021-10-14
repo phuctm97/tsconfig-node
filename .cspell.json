@@ -1,3 +1,4 @@
 {
+  "ignorePaths": ["CHANGELOG.md"],
   "words": ["commitlint", "Minh-Phuc"]
 }
