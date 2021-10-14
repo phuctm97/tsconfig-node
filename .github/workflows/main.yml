@@ -7,8 +7,8 @@ on:
     branches: [main]
 
 jobs:
-  yarn-commitlint:
-    name: yarn commitlint
+  commitlint:
+    name: Commitlint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -17,8 +17,8 @@ jobs:
           cache: yarn
       - run: yarn install
       - run: echo "${{ github.event.head_commit.message }}" | yarn commitlint
-  yarn-lint:
-    name: yarn lint
+  cspell:
+    name: CSpell
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -26,4 +26,14 @@ jobs:
         with:
           cache: yarn
       - run: yarn install
-      - run: yarn lint
+      - run: yarn cspell '**'
+  prettier:
+    name: Prettier
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          cache: yarn
+      - run: yarn install
+      - run: yarn prettier --check .

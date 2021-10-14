@@ -10,8 +10,7 @@
     "yarn": "^1.22.0"
   },
   "scripts": {
-    "prepare": "husky install",
-    "lint": "cspell '**' && prettier --check ."
+    "prepare": "husky install"
   },
   "dependencies": {
     "@tsconfig/node14": "^1.0.1"
