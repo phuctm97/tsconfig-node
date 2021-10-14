@@ -1,4 +1,5 @@
 {
+  "javascript.suggestionActions.enabled": false,
   "files.trimTrailingWhitespace": true,
   "files.trimFinalNewlines": true,
   "files.insertFinalNewline": true,
@@ -6,6 +7,7 @@
   "editor.formatOnSave": true,
   "files.exclude": {
     "node_modules": true,
-    "yarn.lock": true
+    "yarn.lock": true,
+    ".husky": true
   }
 }
