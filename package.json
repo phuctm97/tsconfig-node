@@ -7,7 +7,8 @@
     "yarn": "^1.22.0"
   },
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "cspell '**' && prettier --check ."
   },
   "devDependencies": {
     "@commitlint/cli": "^13.2.1",
