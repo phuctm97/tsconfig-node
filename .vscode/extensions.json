@@ -1,5 +1,6 @@
 {
   "recommendations": [
+    "vivaxy.vscode-conventional-commits",
     "esbenp.prettier-vscode",
     "streetsidesoftware.code-spell-checker"
   ]
