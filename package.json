@@ -1,0 +1,18 @@
+{
+  "name": "tsconfig-node",
+  "version": "0.0.0",
+  "license": "MIT",
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "scripts": {
+    "commit": "cz"
+  },
+  "devDependencies": {
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "prettier": "^2.4.1"
+  }
+}
