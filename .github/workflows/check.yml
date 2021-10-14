@@ -7,8 +7,8 @@ on:
     branches: [main]
 
 jobs:
-  lint-commit-msg:
-    name: Lint commit message
+  yarn-commitlint:
+    name: yarn commitlint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -16,9 +16,10 @@ jobs:
         with:
           cache: yarn
       - run: yarn install
-      - run: yarn commitlint --from=HEAD~1
-  lint-code:
-    name: Lint code
+      - name: yarn commitlint
+        run: echo "${{ github.event.head_commit.message }}" | yarn commitlint
+  yarn-lint:
+    name: yarn lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
