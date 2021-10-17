@@ -1,19 +1,19 @@
 {
   "name": "tsconfig-node",
   "version": "1.0.0-development",
-  "license": "MIT",
+  "description": "TypeScript config preset for Node.js projects.",
+  "keywords": [
+    "tsconfig",
+    "tsconfig-json"
+  ],
   "repository": "github:phuctm97/tsconfig-node",
+  "license": "MIT",
   "author": "Minh-Phuc Tran <me@phuctm97.com> (https://phuctm97.com)",
   "files": [
     "tsconfig.json"
   ],
-  "engines": {
-    "node": "^14.0",
-    "yarn": "^1.22.0"
-  },
   "scripts": {
-    "prepare": "husky install",
-    "release": "semantic-release"
+    "prepare": "husky install"
   },
   "dependencies": {
     "@tsconfig/node14": "^1.0.1"
@@ -25,6 +25,11 @@
     "cspell": "^5.12.3",
     "husky": "^7.0.2",
     "prettier": "^2.4.1",
+    "prettier-plugin-packagejson": "^2.2.13",
     "semantic-release": "^18.0.0"
+  },
+  "engines": {
+    "node": "^14.0",
+    "yarn": "^1.22.0"
   }
 }

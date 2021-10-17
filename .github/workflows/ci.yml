@@ -30,7 +30,7 @@ jobs:
         with:
           cache: yarn
       - run: yarn install
-      - run: yarn release --branches main
+      - run: yarn semantic-release --branches main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
