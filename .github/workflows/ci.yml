@@ -30,6 +30,6 @@ jobs:
         with:
           cache: yarn
       - run: yarn install
-      - run: yarn release
+      - run: yarn release --branches main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
