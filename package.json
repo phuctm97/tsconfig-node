@@ -3,6 +3,7 @@
   "version": "1.0.0-development",
   "license": "MIT",
   "repository": "github:phuctm97/tsconfig-node",
+  "author": "Minh-Phuc Tran <me@phuctm97.com> (https://phuctm97.com)",
   "files": [
     "tsconfig.json"
   ],
