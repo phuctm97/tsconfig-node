@@ -21,7 +21,7 @@ jobs:
       - run: echo "${{ github.event.head_commit.message }}" | yarn commitlint
   release:
     name: Release
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/main'
     needs: [lint]
     runs-on: ubuntu-latest
     steps:
