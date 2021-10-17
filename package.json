@@ -2,6 +2,7 @@
   "name": "tsconfig-node",
   "version": "1.0.0",
   "license": "MIT",
+  "repository": "github:phuctm97/tsconfig-node",
   "files": [
     "tsconfig.json"
   ],
