@@ -19,7 +19,7 @@ jobs:
       - run: yarn install
       - run: yarn prettier --check .
       - run: yarn cspell '**'
-      - if: github.event_name	== 'push'
+      - if: github.event_name	== 'push' && github.actor != 'dependabot[bot]'
         run: echo "${{ github.event.head_commit.message }}" | yarn commitlint
       - if: github.event_name	== 'pull_request'
         run: echo "${{ github.event.pull_request.title }}" | yarn commitlint
