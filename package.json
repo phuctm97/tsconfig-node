@@ -19,7 +19,7 @@
     "@tsconfig/node14": "^1.0.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^14.1.0",
+    "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^14.1.0",
     "@commitlint/prompt-cli": "^14.1.0",
     "cspell": "^5.12.3",
